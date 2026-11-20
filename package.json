@@ -1,0 +1,29 @@
+{
+  "name": "playwright_wishinfinite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test_dev": "cross-env ENV_NAME=dev npx playwright test",
+    "test_demo": "cross-env ENV_NAME=demo npx playwright test",
+    "test_demo_cr": "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed",
+    "test_demo_ui": "cross-env ENV_NAME=demo npx playwright test --ui",
+    "test_uat_cr": "cross-env ENV_NAME=demo npx playwright test --project=chromium --grep=@UAT",
+    "test_demo_cr_vi": "cross-env ENV_NAME=demo npx playwright test --project=chromium --grep=@VISUAL"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^26.6.6"
+  },
+  "dependencies": {
+    "cross-env": "^10.1.0",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^18.0.9"
+  }
+}
